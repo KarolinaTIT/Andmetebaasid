@@ -31,6 +31,7 @@ stip bit,
 mobiil varchar(13),
 aadress TEXT,
 keskmineHinne decimal(2,1) );
+
     ```
   -  Andmete sisestamine tabelisse
    ```
