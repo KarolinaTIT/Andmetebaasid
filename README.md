@@ -9,6 +9,8 @@ andmetebaasidega seotud SQL kood ja konspektid
 - primaarne võti -PRIMARY KEY - veerg(tavaliselt id nimega), unikaalne idenfikaator, mis eristab iga kirje.
 - valisvõti - FOREIGN KEY -FK- veerg,mis loob seos teise tabeli primaarvõtmega.
 - päring - QUERY - запрос
+  <img width="476" height="514" alt="{663D7B25-FCE4-4F63-8344-04C3BC7776E4}" src="https://github.com/user-attachments/assets/c4395a9e-590d-4a09-9510-6507efb70fff" />
+
 
    ## Andmetüübid
   ```
