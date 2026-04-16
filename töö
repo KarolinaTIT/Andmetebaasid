@@ -1,0 +1,94 @@
+'''sql
+CREATE DATABASE TITpv24baas;
+
+--ab kustutamine
+DROP DATABASE MIHKELTAR;
+
+use TITpv24baas;
+--tabeli loomine
+CREATE TABLE opilane(
+opilaneId int Primary Key identity(1,1),--automaatselt täidab numbritega
+eesnimi varchar(25),
+perenimi varchar(30) NOT NULL,
+synniaeg DATE,
+stip bit,
+mobiil varchar(13),
+aadress TEXT,
+keskmineHinne decimal(2,1) );--(2--kokku, 1- peale komat nt 4.5)
+
+SELECT * FROM opilane;
+
+--tabeli täirmine
+INSERT INTO opilane
+VALUES ('Alina','Syrbu', '2005-12-15',0,'+84945','Tallinn', 4.2)
+INSERT INTO opilane(perenimi, eesnimi, keskmineHinne)
+VALUES ('Ivanenko', 'Karina', 4.0),
+('Melesenya', 'Ilja', 3.7),
+('Laid', 'Emilia', 4.4);
+
+--andmete uuendamine tabelis
+UPDATE opilane SET stip=1, aadress='Tallinn';
+
+UPDATE opilane SET stip=1, aadress='Tartu' WHERE opilaneId=5;
+--kustutamie
+-- tabeli kustutamine
+DROP TABLE opilane;
+--andmete kustutamine tabelis
+DELETE FROM opilane WHERE opilaneId=4;
+Select * from opilane;
+
+
+
+--FOREIGN KEY
+CREATE TABLE opetamine(
+opetamineID int PRIMARY KEY identity(1,1),
+kuupaev DATE,
+oppeaine varchar(30),
+opilaneId int,
+FOREIGN KEY (opilaneId) REFERENCES opilane(opilaneId),
+hinne int CHECK(hinne<=5));
+
+SELECT * FROM opetamine;
+SELECT * fROM opilane;
+--täitmine tabeli
+INSERT INTO opetamine
+VALUES ('2016-04-16', 'andmebaasid', 3,4)
+
+
+
+
+CREATE TABLE opetaja(
+opetajaID int PRIMARY KEY identity(1,1),
+nimi varchar(25),
+epost TEXT,
+ruum varchar(255))
+
+SELECT * FROM opetaja;
+
+INSERT INTO opetaja
+VALUES ('Alina','alina@gmail.com',A215),
+('Karina','karina@gmail.com',B115),
+('Aleksandr','aleksandr@gmail.com',C150);
+
+
+
+
+CREATE TABLE tund(
+tundID int PRIMARY KEY identity(1,1),
+kuupaev DATE,
+tundnimi varchar(30),
+opetajaID int,
+FOREIGN KEY (opetajaID) REFERENCES opetaja(opetajaID),
+opetamineID int,
+FOREIGN KEY (opetamineID) REFERENCES opetamine(opetamineID),)
+
+SELECT * FROM tund;
+
+--täitmine tabeli
+INSERT INTO tund(kuupaev, tundnimi, opetajaID, opetamineID)
+VALUES ('2026-3-15','Linux',1,1),
+('2026-3-10','Arvutivõrgud',2,2),
+('2026-1-7','Ajalugu',3,3),
+TRUNCATE TABLE tund;
+
+'''
