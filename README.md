@@ -72,3 +72,4 @@ SELECT * fROM opilane;
 INSERT INTO opetamine
 VALUES ('2016-04-16', 'andmebaasid', 3,4)
 ```
+<img width="302" height="304" alt="{A23FF357-D2F9-4AF2-AF2B-CA4B37D885F6}" src="https://github.com/user-attachments/assets/bfcf9f32-c388-45a0-a4ed-f66dbbb49e16" />
