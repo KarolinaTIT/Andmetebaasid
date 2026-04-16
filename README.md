@@ -23,7 +23,7 @@ andmetebaasidega seotud SQL kood ja konspektid
   - Tabeli loomine
 
      ```
-      CREATE TABLE opilane(
+      #CREATE TABLE opilane(
 opilaneId int Primary Key identity(1,1),--automaatselt täidab numbritega
 eesnimi varchar(25),
 perenimi varchar(30) NOT NULL,
@@ -33,7 +33,8 @@ mobiil varchar(13),
 aadress TEXT,
 keskmineHinne decimal(2,1) );--(2--kokku, 1- peale komat nt 4.5)
 
-     SELECT * FROM opilane;
+     #SELECT * FROM opilane;
+     
     ```
   -  Andmete sisestamine tabelisse
    ```
