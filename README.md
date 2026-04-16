@@ -22,7 +22,7 @@ andmetebaasidega seotud SQL kood ja konspektid
   ## SQL - structure Query Language - struktureeritud päringu keel
   - Tabeli loomine
 
-     ```
+     ```sql
       CREATE TABLE opilane(
 opilaneId int Primary Key identity(1,1),--automaatselt täidab numbritega
 eesnimi varchar(25),
@@ -44,3 +44,31 @@ VALUES ('Ivanenko', 'Karina', 4.0),
 ('Melesenya', 'Ilja', 3.7),
 ('Laid', 'Emilia', 4.4);
     ```
+## Seosed (Tabelivahelised seosed)
+-üks -ühile (nt mees-naine)
+- üks- mitmeline (nt ema-lapsed)<img width="575" height="242" alt="{EC5AD3C4-1939-43BB-98E6-9CE12AD70D1A}" src="https://github.com/user-attachments/assets/165dd3bd-b08d-4e78-8094-8c6ae5158a4c" />
+- mitu - mitmele (nt õpilase - õpetajad)
+## PIIRANGUD
+constraint - ограничения (5)
+1. PRIMARY KEY
+2. FOREIGN KEY
+3. CHECK
+4. NOT NULL
+5. UNIQUE
+
+```sql
+--FOREIGN KEY
+CREATE TABLE opetamine(
+opetamineID int PRIMARY KEY identity(1,1),
+kuupaev DATE,
+oppeaine varchar(30),
+opilaneId int,
+FOREIGN KEY (opilaneId) REFERENCES opilane(opilaneId),
+hinne int CHECK(hinne<=5));
+
+SELECT * FROM opetamine;
+SELECT * fROM opilane;
+--täitmine tabeli
+INSERT INTO opetamine
+VALUES ('2016-04-16', 'andmebaasid', 3,4)
+```
