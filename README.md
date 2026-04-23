@@ -48,6 +48,7 @@ VALUES ('Ivanenko', 'Karina', 4.0),
 -üks -ühile (nt mees-naine)
 - üks- mitmeline (nt ema-lapsed)<img width="575" height="242" alt="{EC5AD3C4-1939-43BB-98E6-9CE12AD70D1A}" src="https://github.com/user-attachments/assets/165dd3bd-b08d-4e78-8094-8c6ae5158a4c" />
 - mitu - mitmele (nt õpilase - õpetajad)
+
 ## PIIRANGUD
 constraint - ограничения (5)
 1. PRIMARY KEY
@@ -73,3 +74,56 @@ INSERT INTO opetamine
 VALUES ('2016-04-16', 'andmebaasid', 3,4)
 ```
 <img width="302" height="304" alt="{A23FF357-D2F9-4AF2-AF2B-CA4B37D885F6}" src="https://github.com/user-attachments/assets/bfcf9f32-c388-45a0-a4ed-f66dbbb49e16" />
+
+
+
+
+
+
+
+
+
+## ALTER TABLE
+-tabeli struktuuri muutmine (struktuur: veerudenimed, andmetüübid, piirangud)
+```sql
+--uue veeru lisamine
+ALTER TABLE opilane ADD isikukood varchar(11);
+
+--veeru kustutamine 
+ALTER TABLE opilane DROP COLUMN isikukood;
+
+--andmetüübi muutmine(11) --> char(11)
+ALTER TABLE opilane ALTER COLUMN isikukood char(11);
+--sisseehitatud protseduur, mis näitab tabeli struktuur
+sp_help opilane;
+
+
+```
+
+
+```sql
+--PK lisamine
+ALTER TABLE ryhm ADD CONSTRAINT pk_ryhm PRIMARY KEY (ryhmId);
+--UNIQUE lisamine
+ALTER TABLE ryhm ADD CONSTRAINT un_ryhm UNIQUE (ryhmNimi);
+
+--kontrollimiseks täidame tabeli ryhm
+SELECT * FROM ryhm;
+INSERT INTO ryhm (ryhmId, ryhmNimi)
+VALUES (2, 'TITpe24');
+
+--lisame Foreign Key -võõrbõti -valisvõti
+ALTER TABLE opilane ADD ryhmId int;
+SELECT * from opilane;
+SELECT * FROM ryhm;
+ALTER TABLE opilane ADD CONSTRAINT fk_ryhm 
+FOREIGN KEY (ryhmId) REFERENCES ryhm(ryhmId);
+
+--kontrollimiseks - täidame tabeli opilane
+ INSERT INTO opilane
+VALUES ('Alina','Syrbu', '2005-12-15',0,'+84945','Tallinn', 4.2, '568448',2),
+('Ivanenko', 'Karina','2002-10-7',0,'+8166186','Tartu', 4.0,'4248956',1);
+```
+
+
+
