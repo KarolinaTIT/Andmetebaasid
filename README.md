@@ -7,6 +7,7 @@ andmetebaasidega seotud SQL kood ja konspektid
 - [Piirangud](#piirangud)
 - [ALTER TABLE](#ALTER-TABLE)
 - [SQL - structure Query Language - struktureeritud päringu keel](#SQL-structure-Query-Language-struktureeritud-päringu-keel)
+- [Seosed Tabelivahelised seosed](#Seosed-Tabelivahelised-seosed)
 
 
 
