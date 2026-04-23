@@ -29,7 +29,7 @@ andmetebaasidega seotud SQL kood ja konspektid
   3. Loogiliselt: boolean, true/false, bit, bool
   4. Kuupäeva: date, time , datetime
   ```
-  ## SQL - structure Query Language - struktureeritud päringu keel
+  ## SQL-structure Query Language-struktureeritud päringu keel
   - Tabeli loomine
 
      ```sql
