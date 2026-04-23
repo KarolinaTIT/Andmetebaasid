@@ -135,6 +135,7 @@ FOREIGN KEY (ryhmId) REFERENCES ryhm(ryhmId);
 VALUES ('Alina','Syrbu', '2005-12-15',0,'+84945','Tallinn', 4.2, '568448',2),
 ('Ivanenko', 'Karina','2002-10-7',0,'+8166186','Tartu', 4.0,'4248956',1);
 ```
+<img width="611" height="123" alt="{68C97CD6-741B-4418-9A7F-FFC30ECC6474}" src="https://github.com/user-attachments/assets/459accfc-d7cd-4142-99bb-79f1adba3a05" />
 
 
 
