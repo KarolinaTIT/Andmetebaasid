@@ -106,4 +106,16 @@ VALUES ('2026-08-10', '2026-07-7',1,1);
 
 SELECT * from  occupied_room;
 ```
+<img width="412" height="87" alt="{BFCE68E0-8EB6-4E0A-9B5C-7B07BDD8D10F}" src="https://github.com/user-attachments/assets/0cd31554-7cf8-42a7-a4cc-cb110b7896b1" />
 
+```
+sql
+--7 hosted_at
+CREATE TABLE hosted_at(
+hosted_atID int PRIMARY KEY identity(1,1),
+guestID int ,
+occupied_roomID int,
+FOREIGN KEY (guestID) references guest(guestID),
+FOREIGN KEY (occupied_roomID) references occupied_room(occupied_roomID));
+
+INSERT INTO occupied_room 
