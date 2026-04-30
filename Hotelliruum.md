@@ -118,4 +118,9 @@ occupied_roomID int,
 FOREIGN KEY (guestID) references guest(guestID),
 FOREIGN KEY (occupied_roomID) references occupied_room(occupied_roomID));
 
-INSERT INTO occupied_room 
+INSERT INTO hosted_at 
+VALUES (1,2);
+
+SELECT * from hosted_at;
+```
+<img width="416" height="382" alt="{8B3AE045-AA1F-4DAE-BCF7-537F8DDE25FD}" src="https://github.com/user-attachments/assets/967c3800-84bd-45b4-891a-dd341cd5ee5b" />
