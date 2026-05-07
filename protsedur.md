@@ -26,6 +26,7 @@ END
 <img width="509" height="619" alt="{F2259D21-2A33-4994-AEE5-765FE785A3F4}" src="https://github.com/user-attachments/assets/d660ade3-d274-4d85-868e-7b0cecbc1936" />
 
 <img width="624" height="368" alt="{6A6D2795-7375-47A0-A296-0EE2ED977B27}" src="https://github.com/user-attachments/assets/6dadfeff-eee7-4cae-85e4-769510fc850a" />
+
 	```sql
 --otsing esimese tähe järgi
 Create procedure otsingtaht
@@ -38,3 +39,13 @@ END
 --kutse
 EXEC otsingtaht 'P'
 	```
+
+	<img width="524" height="361" alt="{578F0FE4-0BB0-46FB-8176-79418944F471}" src="https://github.com/user-attachments/assets/455dc607-f34a-4be9-abd1-1c5a1eaa57c7" />
+
+```sql
+--lisame uus veerg
+ALTER TABLE guest ADD arveSumma money;
+select * from guest;
+
+Update guest set arveSumma=1939 where guestID=5
+```
