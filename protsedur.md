@@ -94,3 +94,31 @@ Exec muudatus 'add', 'guest', 'testVeerg', int
 Select * from guest
 Exec muudatus 'drop', 'guest', 'testVeerg' 
 ```
+
+
+<img width="612" height="516" alt="{575C00D3-BB4B-40E7-846A-6CB8AF7D9349}" src="https://github.com/user-attachments/assets/1681b790-1a0d-4258-9275-ec580183a521" />
+
+
+```sql
+--7. Protseduur, mis kuvab eesnimi, arveSumma ja lisab automaatselt hinnangu 
+
+        kui hind < 2 → "soodne"
+        muidu → "kallis"
+
+
+        CREATE PROCEDURE kuvaArveHinnang
+        AS
+        BEGIN
+            SELECT 
+                firstname,
+                arveSumma,
+                CASE 
+                    WHEN arveSumma < 750 THEN 'väike summa'
+                    ELSE 'suur summa'
+                END AS hinnang
+            FROM guest;
+        END;
+
+		--kutse
+		EXEC kuvaArveHinnang
+```
