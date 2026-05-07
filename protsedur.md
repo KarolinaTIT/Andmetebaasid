@@ -48,3 +48,49 @@ select * from guest;
 
 Update guest set arveSumma=1939 where guestID=5
 ```
+
+```sql
+---kutse
+
+DECLARE @minArve MONEY, @maxArve MONEY;
+
+EXEC minmaxArve @minArve OUTPUT, @maxArve OUTPUT;
+
+PRINT 'Min arve = ' + CONVERT(varchar, @minArve);
+PRINT 'Max arve = ' + CONVERT(varchar, @maxArve);
+```
+
+<img width="540" height="363" alt="{A8A5D3FD-75EB-41A7-9369-0E8922231C5C}" src="https://github.com/user-attachments/assets/767b054b-e871-44ec-b354-aa79592dde30" />
+
+
+<img width="527" height="293" alt="{4B430CCC-DC54-4079-9569-CB6F205DFF9C}" src="https://github.com/user-attachments/assets/0333c7d6-e4f4-439a-9d24-a8db2714ceb6" />
+
+
+```sql
+--Protseduur veeru lisamiseks või kustutamiseks
+CREATE PROCEDURE muudatus
+    @tegevus varchar(10),
+    @tabelinimi varchar(25),
+    @veerunimi varchar(25),
+    @tyyp varchar(25) = NULL
+AS
+BEGIN
+    DECLARE @sqltegevus varchar(max);
+
+    SET @sqltegevus = CASE 
+        WHEN @tegevus = 'add' THEN 
+            CONCAT('ALTER TABLE ', @tabelinimi, ' ADD ', @veerunimi, ' ', @tyyp)
+
+        WHEN @tegevus = 'drop' THEN 
+            CONCAT('ALTER TABLE ', @tabelinimi, ' DROP COLUMN ', @veerunimi)
+    END;
+
+    PRINT @sqltegevus;
+    EXEC (@sqltegevus);
+END;
+
+--kutse
+Exec muudatus 'add', 'guest', 'testVeerg', int 
+Select * from guest
+Exec muudatus 'drop', 'guest', 'testVeerg' 
+```
