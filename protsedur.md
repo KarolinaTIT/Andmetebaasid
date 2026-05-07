@@ -24,6 +24,20 @@ END
 <img width="479" height="242" alt="{E29041E1-E8F2-4272-A311-50B535851DB2}" src="https://github.com/user-attachments/assets/28bdc918-fbc1-4916-a6a0-2fe80774dc4d" />
 
 <img width="509" height="619" alt="{F2259D21-2A33-4994-AEE5-765FE785A3F4}" src="https://github.com/user-attachments/assets/d660ade3-d274-4d85-868e-7b0cecbc1936" />
+```sql
+
+CREATE PRoCEDURE kustutasGuest
+@kustutaId int
+AS
+BEGIN
+select * from guest;
+delete from guest where guestID=@kustutaId;
+select * from guest;
+END
+
+--kutse
+EXEC kustutasGuest 2;
+```
 
 <img width="624" height="368" alt="{6A6D2795-7375-47A0-A296-0EE2ED977B27}" src="https://github.com/user-attachments/assets/6dadfeff-eee7-4cae-85e4-769510fc850a" />
 
