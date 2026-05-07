@@ -2,7 +2,7 @@
 - store protcedure - salvestatud protseduurid - хранимые процедуры
 - sama nagu funktsioonid programmerimises - mingid tefevused mis käivitakse automaatselt protseduuri kasutamisel
   
- 	 ```sql
+```sql
 CREATE PROCEDURE lisaGuest
 -- @parameetrid
 @uusNimi varchar(25),
@@ -15,7 +15,7 @@ BEGIN
 	values(@uusNimi,@uusPerenimi,@kuupäev);
 	select * from guest;
 END
-	```
+```
 
 
 
@@ -27,7 +27,7 @@ END
 
 <img width="624" height="368" alt="{6A6D2795-7375-47A0-A296-0EE2ED977B27}" src="https://github.com/user-attachments/assets/6dadfeff-eee7-4cae-85e4-769510fc850a" />
 
-	```sql
+```sql
 --otsing esimese tähe järgi
 Create procedure otsingtaht
 @taht char(1)
@@ -35,10 +35,9 @@ AS
 BEGIN
 SELECT * FROM guest where lastname LIKE @taht + '%'; --% teised sümboolid  
 END
-
 --kutse
 EXEC otsingtaht 'P'
-	```
+```
 
 	<img width="524" height="361" alt="{578F0FE4-0BB0-46FB-8176-79418944F471}" src="https://github.com/user-attachments/assets/455dc607-f34a-4be9-abd1-1c5a1eaa57c7" />
 
