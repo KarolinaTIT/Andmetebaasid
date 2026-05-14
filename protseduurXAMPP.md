@@ -20,3 +20,4 @@ Valjuta nuppu teosta ja muuda
 
 ## Protseduur mis küsib uue looma andmeid tabelisse
 
+<img width="711" height="388" alt="{4AD367C8-5827-48FE-AE30-7BD3D68996E5}" src="https://github.com/user-attachments/assets/a005e0d5-a57a-4601-9a18-6642497cf2db" />
