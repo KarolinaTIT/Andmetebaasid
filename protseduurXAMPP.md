@@ -24,3 +24,7 @@ Valjuta nuppu teosta ja muuda
 
 
 <img width="604" height="294" alt="{093D88DA-0968-469C-8DD3-B0DCC1FA59FC}" src="https://github.com/user-attachments/assets/27742eec-765a-4605-9c84-930ff000b5c3" />
+
+
+
+<img width="619" height="272" alt="{7E8DE4D7-61DE-47E7-863D-23E1755661C3}" src="https://github.com/user-attachments/assets/36b63cb2-93e8-4979-9624-088a772e89f6" />
