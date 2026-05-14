@@ -28,3 +28,11 @@ Valjuta nuppu teosta ja muuda
 
 
 <img width="619" height="272" alt="{7E8DE4D7-61DE-47E7-863D-23E1755661C3}" src="https://github.com/user-attachments/assets/36b63cb2-93e8-4979-9624-088a772e89f6" />
+
+
+<img width="557" height="282" alt="{2CFFF462-9B0C-413A-AB9C-6FD9791242CD}" src="https://github.com/user-attachments/assets/6e2cc682-b280-43c0-baa0-a6072f019e05" />
+
+
+<img width="620" height="283" alt="{B0C2F8BB-6AAE-4051-A354-D77542B632A5}" src="https://github.com/user-attachments/assets/737b04c1-5831-4998-aff7-d9714e8708ac" />
+
+
