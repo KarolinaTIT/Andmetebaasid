@@ -70,4 +70,62 @@ SELECT * FROM fn_my_permissions('loomad', 'OBJECT')
 --uuendame vanus kus loomId=1
 UPDATE loomad SET chip=0 where loomId=1;
 
+DROP TABLE movies;
 
+Create database MovieBase1; 
+use MovieBase1;
+
+CREATE TABLE movies (
+    moviesId INT PRIMARY KEY IDENTITY(1,1),
+    moviesNimi VARCHAR(50),
+    moviesYear VARCHAR(25) NOT NULL,
+    movieDir VARCHAR(25) NOT NULL,
+    movieCost MONEY
+);
+
+INSERT INTO movies (moviesNimi, moviesYear, movieDir, movieCost)
+VALUES ('pirates of the caribbean', '2017', 'Gore Verbinski ', 1400000000);
+
+SELECT * FROM movies;
+
+CREATE TABLE guest (
+    id INT PRIMARY KEY IDENTITY(1,1),
+    guestname VARCHAR(50) NOT NULL,
+);
+
+INSERT INTO guest(guestname)
+VALUES ('Karina');
+
+SELECT * FROM guest;
+
+
+---õiguste määramine
+--GRANT -kasutaja õiguste lubamine - разрешение прав пользователя
+--DENY -kasutaja õiguste keelamine - запрет
+
+GRANT SELECT ON movies TO Produtsent1;
+GRANT INSERt ON movies TO directorKarolina;
+-- saab uuendada ainult vanus!
+grant update(vanus) ON loomad to directorKarolina;
+
+DENY DELETE ON loomad TO directorKarolina;
+
+-- Право смотреть таблицу movies
+GRANT SELECT ON movies TO Produtsent1;
+
+-- Право обновлять только movieDir и movieCost
+GRANT UPDATE (movieDir, movieCost)
+ON movies
+TO Produtsent1;
+
+-- Дополнительная привилегия
+GRANT INSERT ON movies TO Produtsent1;
+
+GRANT SELECT, INSERT
+ON guest
+TO Produtsent1;
+
+DENY DELETE ON movies TO Produtsent1;
+DENY DELETE ON guest TO Produtsent1;
+
+SELECT * FROM fn_my_permissions('movies', 'OBJECT')
