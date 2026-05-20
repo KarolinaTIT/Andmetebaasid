@@ -12,3 +12,11 @@
 
 
 <img width="705" height="205" alt="{DCD4B477-53F4-4D9C-A531-D96FDE828FC8}" src="https://github.com/user-attachments/assets/caa5763e-f894-445b-9c80-d8aa5f14239b" />
+
+
+
+<img width="735" height="640" alt="{C0B4F316-9419-411F-8917-57068E622779}" src="https://github.com/user-attachments/assets/b31aa9a1-b305-4640-8728-85a0095238d0" />
+Teeme et kasutaja saab deleted failid ja muidab failid
+<img width="945" height="616" alt="pilt" src="https://github.com/user-attachments/assets/767b86b8-bf2c-44b9-9ad3-af0807da3c30" />
+
+<img width="945" height="579" alt="pilt" src="https://github.com/user-attachments/assets/42029b7c-5c0c-4661-9daa-9b0cde3d6160" />
