@@ -39,3 +39,35 @@ GRANT INSERt ON loomad TO directorKarolina;
 
 DENY DELETE ON loomad TO directorKarolina;
 ```
+
+
+
+<img width="706" height="801" alt="{6975E766-371D-4925-AAF2-4BEE8BB0588A}" src="https://github.com/user-attachments/assets/af930aed-312a-4e50-9b1b-677137bc7a88" />
+
+
+
+<img width="470" height="511" alt="{5A97F919-EEC6-45CE-B3B0-8C721BEF6362}" src="https://github.com/user-attachments/assets/899d3548-a760-41c4-ba90-3a18946060e7" />
+
+
+<img width="520" height="302" alt="{D05D5E6B-32F1-4C59-9C15-F2E73F6BE966}" src="https://github.com/user-attachments/assets/a03887af-1fc9-4c3a-a0f7-84545adb1212" />
+
+
+<img width="581" height="614" alt="{B282E8E4-340A-4329-8D8C-5F86A4B7E2BA}" src="https://github.com/user-attachments/assets/a2889a04-9064-4252-be74-c850ab96568f" />
+
+
+--direktorKarolina saab lisada andmeid  tabelisse loomad
+INSERT INTO loomad(loomNimi,vanus,chip)
+values ('papagoi Lort',15,3);
+
+--direktorKarolina ei saa kustutada tabelistdelete from loomad where loomId=1
+DELETE FROM loomad Where loomId=2
+--ei saa tabeleid luua
+CREATE TABLE test(id int);
+
+--iga kasutaja ise saab kontrollida temale määratud õigused
+SELECT * FROM fn_my_permissions('loomad', 'OBJECT')
+
+--uuendame vanus kus loomId=1
+UPDATE loomad SET chip=0 where loomId=1;
+
+
