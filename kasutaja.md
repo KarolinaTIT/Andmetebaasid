@@ -129,3 +129,45 @@ DENY DELETE ON movies TO Produtsent1;
 DENY DELETE ON guest TO Produtsent1;
 
 SELECT * FROM fn_my_permissions('movies', 'OBJECT')
+
+
+CREATE DAtABASE kasutajaTITpv24;
+
+USE kasutajaTITpv24;
+
+create table loomad(
+loomId int Primary key identity(1,1),
+loomNimi varchar(25) not null,
+vanus int check(vanus>0),
+chip bit)
+
+INSERT INTO loomad(loomNimi, vanus, chip)
+values ('lõvi Kor', 3,0 );
+
+select * from loomad;
+
+---õiguste määramine
+--GRANT -kasutaja õiguste lubamine - разрешение прав пользователя
+--DENY -kasutaja õiguste keelamine - запрет
+
+GRANT SELECT ON loomad TO directorKarolina;
+GRANT INSERt ON loomad TO directorKarolina;
+-- saab uuendada ainult vanus!
+grant update(vanus) ON loomad to directorKarolina;
+
+DENY DELETE ON loomad TO directorKarolina;
+
+
+
+CREATE TABLE movies (
+    moviesId INT PRIMARY KEY IDENTITY(1,1),
+    moviesNimi VARCHAR(50),
+    moviesYear VARCHAR(25) NOT NULL,
+    movieDir VARCHAR(25) NOT NULL,
+    movieCost MONEY
+);
+
+INSERT INTO movies (moviesNimi, moviesYear, movieDir, movieCost)
+VALUES ('Avatar', '2009', 'James Cameron', 237000000);
+
+SELECT * FROM movies;
