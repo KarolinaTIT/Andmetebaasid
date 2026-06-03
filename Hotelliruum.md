@@ -1,3 +1,11 @@
+## Andmetebaaside konspektid / Karolina
+
+
+[Põhimõisted](README.md). [Protsedur](protsedur.md). [protsedur/XAMPP](protseduurXAMPP.md). [Hotelliruum](Hotelliruum.md). [Hotelliruum/XAMPP](hotellstseblokina.sql) [Triger](triger.md)
+
+
+
+
 ## ANdmebaas Hotelliruumi reserverimine
 ```
 sql
