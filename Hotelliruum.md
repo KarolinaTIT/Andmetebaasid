@@ -6,7 +6,7 @@
 
 
 
-## ANdmebaas Hotelliruumi reserverimine
+## Andmebaas Hotelliruumi reserverimine
 ```
 sql
 --1 guest
