@@ -1,3 +1,9 @@
+## Andmetebaaside konspektid / Karolina
+
+
+[Põhimõisted](README.md). [Protsedur](protsedur.md). [protsedur/XAMPP](protseduur/XAMPP.md). [Hotelliruum](Hotelliruum.md). [Hotelliruum/XAMPP](hotellstseblokina.sql) [Triger](triger.md)
+
+
 ## Trigger  - triger -päästik
 - andmebaasi object, mis automaatselt käivitud tabeli sündmused (INSERT, UPDATE, DELETE).
 
