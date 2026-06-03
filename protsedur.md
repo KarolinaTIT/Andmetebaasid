@@ -1,3 +1,10 @@
+## Andmetebaaside konspektid / Karolina
+
+
+[Põhimõisted](README.md). [Protsedur](protsedur.md). [protsedur/XAMPP](protseduur/XAMPP.md). [Hotelliruum](Hotelliruum.md). [Hotelliruum/XAMPP](hotellstseblokina.sql) [Triger](triger.md)
+
+
+
 ## SQL Protseduurid
 - store protcedure - salvestatud protseduurid - хранимые процедуры
 - sama nagu funktsioonid programmerimises - mingid tefevused mis käivitakse automaatselt protseduuri kasutamisel
