@@ -1,7 +1,7 @@
 ## Andmetebaaside konspektid / Karolina
 
 
-[Põhimõisted](README.md).  
+[Põhimõisted](README.md). [Protsedur](protsedur.md). [protsedur/XAMPP](protseduur/XAMPP.md). [Hotelliruum](Hotelliruum.md). [Hotelliruum/XAMPP](hotellstseblokina.sql) [Triger](triger.md)
 
 
 
