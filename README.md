@@ -1,4 +1,10 @@
-## Andmetebaasid
+## Andmetebaaside konspektid / Karolina
+
+
+[Põhimõisted](README.md).  
+
+
+
 andmetebaasidega seotud SQL kood ja konspektid
 
 ## Sisukord
