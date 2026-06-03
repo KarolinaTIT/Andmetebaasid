@@ -1,3 +1,9 @@
+## Andmetebaaside konspektid / Karolina
+
+
+[Põhimõisted](README.md). [Protsedur](protsedur.md). [protsedur/XAMPP](protseduur/XAMPP.md). [Hotelliruum](Hotelliruum.md). [Hotelliruum/XAMPP](hotellstseblokina.sql) [Triger](triger.md)
+
+
 --sekretaar saab muuda/kustuda ja lisa 
 <img width="728" height="779" alt="{B07D6452-FA84-4974-8835-C65546B1149A}" src="https://github.com/user-attachments/assets/5e5efdda-7e74-4ecf-81a8-ee864bb58a5e" />
 
