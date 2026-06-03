@@ -1,3 +1,12 @@
+## Andmetebaaside konspektid / Karolina
+
+
+[Põhimõisted](README.md). [Protsedur](protsedur.md). [protsedur/XAMPP](protseduur/XAMPP.md). [Hotelliruum](Hotelliruum.md). [Hotelliruum/XAMPP](hotellstseblokina.sql) [Triger](triger.md)
+
+
+
+
+
 ## SQL Server – Kasutajate autentimine ja õiguste haldamine
 ## Mis on autentimine SQL Serveris?
 ### Autentimine tähendab kasutaja tuvastamist ehk kontrollimist, kas kasutajal on õigus SQL Serverisse sisse logida.
