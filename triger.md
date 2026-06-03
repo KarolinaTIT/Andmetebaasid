@@ -100,4 +100,10 @@ select * from linnad;
 select * from logi;
 ```
 
+
+
+<img width="674" height="648" alt="{0B582AC0-6FDB-4E66-BD5E-19407E94E269}" src="https://github.com/user-attachments/assets/f4b64e12-4f31-436f-b409-d3c55e9b86cf" />
+
 <img width="666" height="298" alt="{65791D06-C213-47D2-A09A-7E847EDA1918}" src="https://github.com/user-attachments/assets/84d45019-4dec-42a4-b2cc-ddfec56dd5f1" />
+
+
